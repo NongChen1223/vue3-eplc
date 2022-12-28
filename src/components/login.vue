@@ -22,21 +22,21 @@
         </el-tabs>
     </div>
 </template>
-<script setup lang="ts">
-import { reactive, toRefs } from "@vue/reactivity";
+<script lang="ts" setup>
+import { reactive, toRefs, onMounted } from "vue"
 import { ElMessage } from "element-plus";
 const form = reactive({
     Email: "",
     password: "",
     isAgree: 0,
 });
-
-
-// 方法
-// 登录
 function login() {
-    ;
+    console.log('412121')
 }
+
+onMounted(() => {
+
+})
 
 </script>
   
