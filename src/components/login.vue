@@ -25,6 +25,7 @@
 <script lang="ts" setup>
 import { reactive, toRefs, onMounted } from "vue"
 import { ElMessage } from "element-plus";
+import { a } from "@/api/login"
 const form = reactive({
     Email: "",
     password: "",
@@ -35,7 +36,7 @@ function login() {
 }
 
 onMounted(() => {
-
+    console.log('44545',a)
 })
 
 </script>
