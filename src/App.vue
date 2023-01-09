@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <!-- <div>
+    <div>
       <router-link to="/">Login</router-link>
-    </div> -->
-    <!-- <div>
+    </div>
+    <div>
       <router-link style="margin-left: 30px;" to="/reg">Reg</router-link>
-    </div> -->
+    </div>
     <div class="container__login">
       <router-view></router-view>
     </div>
