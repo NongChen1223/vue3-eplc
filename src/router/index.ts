@@ -2,12 +2,12 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    component: () => import("@/components/login.vue"),
+    path: "/login",
+    component: () => import("@/view/login.vue"),
   },
   {
     path: "/reg",
-    component: () => import("@/components/reg.vue"),
+    component: () => import("@/view/reg.vue"),
   },
 ];
 

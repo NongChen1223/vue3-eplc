@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <router-link to="/">Login</router-link>
+      <router-link to="/login">Login</router-link>
     </div>
     <div>
       <router-link style="margin-left: 30px;" to="/reg">Reg</router-link>
