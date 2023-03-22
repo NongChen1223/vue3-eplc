@@ -76,7 +76,7 @@ onMounted(() => {
             pointer-events: none;
             font-size: 1em;
             color: rgba(255,255,255,0.5);
-            text-transform: uppercase;
+            text-transform: uppercase;//标签内所以字母转为大写
             transition:0.3s;
         }
 
