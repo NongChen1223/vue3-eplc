@@ -22,9 +22,11 @@ const form = reactive({
     password: "",
     isAgree: 0,
 });
+//登录接口
 function login() {
     console.log('412121')
 }
+
 
 onMounted(() => {
     console.log('44545')
@@ -36,14 +38,14 @@ onMounted(() => {
 <style lang="scss" scoped>
 .page-login{
     padding: 50px;
-    height: 400px;
+    // height: 400px;
     background: #09203f;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     user-select: none;//禁止用户选中文本
-    gap: 20px;
+    gap: 50px;
     h2{
         color: white;
     }
@@ -61,6 +63,23 @@ onMounted(() => {
             font-size: 1em;
             transition: 0.3s;
         }
+        input:valid~span,input:focus~span{
+            color: #09203f;
+            transform: translateX(20px) translateY(-7px);
+            font-size: 0.65em;
+            padding: 10px 5px 0 0;
+        }
+        span{
+            position: absolute;
+            left: 0;
+            padding: 10px 5px 0 0 ;
+            pointer-events: none;
+            font-size: 1em;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            transition:0.3s;
+        }
+
     }
 }
 </style>
