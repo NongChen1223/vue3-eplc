@@ -36,9 +36,11 @@ onMounted(() => {
 </script>
   
 <style lang="scss" scoped>
+*{
+    margin: 0;
+    padding: 0;
+}
 .page-login{
-    padding: 50px;
-    // height: 400px;
     background: #09203f;
     display: flex;
     justify-content: center;
@@ -63,16 +65,27 @@ onMounted(() => {
             font-size: 1em;
             transition: 0.3s;
         }
+        /* 
+         CSS 代码块表示当输入框输入的值合法或者获得了焦点时，相邻的 span 元素就会应用以下样式
+         即输入框输入合法值和获得焦点时。
+        */
         input:valid~span,input:focus~span{
-            color: #09203f;
-            transform: translateX(20px) translateY(-7px);
+            color: #50c9c3;
+            transform: translateX(20px) translateY(-7px);//向右平移20像素，向上平移7像素
             font-size: 0.65em;
-            padding: 10px 5px 0 0;
+            padding: 0 5px 0 5px;
+            background: #09203f;
+            letter-spacing: 0.1em;
+        }
+        input:valid input:focus{
+            border: 1px solid #50c9c3;
+         
         }
         span{
             position: absolute;
+            top: 0;
             left: 0;
-            padding: 10px 5px 0 0 ;
+            padding: 15px;
             pointer-events: none;
             font-size: 1em;
             color: rgba(255,255,255,0.5);
