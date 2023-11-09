@@ -12,7 +12,9 @@
     "axios": "^1.2.1",
     "element-plus": "^2.2.27",
     "express-session": "^1.17.3",
+    "mitt": "^3.0.1",
     "path": "^0.12.7",
+    "three": "^0.158.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

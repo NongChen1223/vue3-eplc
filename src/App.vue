@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <!-- <div>
       <router-link to="/login">Login</router-link>
     </div>
     <div>
@@ -8,12 +8,16 @@
     </div>
     <div class="container__login">
       <router-view></router-view>
-    </div>
+    </div> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, toRefs } from "vue"
+import { ref, reactive, toRefs, onMounted } from "vue";
+onMounted(() => {
+  console.log("嘿嘿嘿");
+});
 </script>
 
 <style lang="scss" scoped>

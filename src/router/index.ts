@@ -9,6 +9,24 @@ const routes: Array<RouteRecordRaw> = [
     path: "/reg",
     component: () => import("@/view/reg.vue"),
   },
+  {
+    path: "/three",
+    component: () => import("@/view/three.vue"),
+  },
+  {
+    path: "/canvas",
+    component: () => import("@/view/canvas/index.vue"),
+    children: [
+      {
+        path: "screenshot",
+        component: () => import("@/view/canvas/screenshot.vue"),
+      },
+      {
+        path: "drawingBoard",
+        component: () => import("@/view/canvas/drawingBoard.vue"),
+      },
+    ],
+  },
 ];
 
 const router = createRouter({
