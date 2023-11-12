@@ -39,7 +39,7 @@ const createBoard = () => {
 const mouseDown = (e) => {
   console.log("鼠标移动", e);
   ctx.value = canvas.value?.getContext("2d");
-  //创建路径
+  // 11
   ctx.value?.beginPath(e.offsetX, e.offsetY);
   ctx.value.stroke();
 };
