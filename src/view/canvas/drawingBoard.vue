@@ -54,6 +54,7 @@ const setContext2DStyle = () => {
 };
 //鼠标按下事件
 const mouseDown = (e) => {
+  console.log("鼠标按下=======");
   // console.log("鼠标移动", ctx.value, e);
   moveOn.value = !moveOn.value;
   //如果鼠标按下，记录鼠标按下的位置
@@ -65,6 +66,7 @@ const mouseDown = (e) => {
 };
 //鼠标移动事件
 const mouseMove = (e) => {
+  console.log("鼠标移动=======");
   if (moveOn.value) {
     ctx.value.lineTo(e.offsetX, e.offsetY);
     ctx.value.stroke();
@@ -72,6 +74,8 @@ const mouseMove = (e) => {
 };
 //鼠标抬起事件
 const mouseUp = (e) => {
+  console.log("鼠标抬起=======");
+  moveOn.value = false;
   ctx.value.closePath();
 };
 </script>
